@@ -1,0 +1,24 @@
+jenkins:
+  securityRealm:
+    local:
+      allowsSignup: false
+      users:
+       - id: admin
+         password: admin
+  authorizationStrategy:
+    globalMatrix:
+      permissions:
+        - "Overall/Administer:admin"
+        - "Overall/Read:authenticated"
+  remotingSecurity:
+    enabled: true
+
+unclassified:
+  location:
+    url: http://127.0.0.1:8087/	
+
+tool:
+  git:
+    installations:
+      - name: git
+        home: /usr/local/bin/git 

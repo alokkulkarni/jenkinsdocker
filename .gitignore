@@ -1,0 +1,17 @@
+.DS_STORE
+.idea
+node_modules
+build
+dist
+coverage
+*.log
+*.log.*
+*.log-*
+*.log/*
+*.log-*/
+*.log-*/
+.env
+.vscode
+*.DS_STORE
+*.idea
+*.log
